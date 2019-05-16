@@ -1,0 +1,44 @@
+<resources>
+    <!--Sign up copy-->
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_180dp">180dp</dimen>
+    <dimen name="dimen_207dp">207dp</dimen>
+    <dimen name="dimen_209dp">209dp</dimen>
+    <dimen name="dimen_211dp">211dp</dimen>
+    <dimen name="dimen_300dp">300dp</dimen>
+
+    <!-- For Text View-->
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_22sp">22sp</dimen>
+    <dimen name="dimen_50sp">50sp</dimen>
+
+
+    <!-- For Margin and padding-->
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_padding_10dp">10dp</dimen>
+    <dimen name="margin_padding_12dp">12dp</dimen>
+    <dimen name="margin_padding_15dp">15dp</dimen>
+    <dimen name="margin_padding_20dp">20dp</dimen>
+    <dimen name="margin_padding_25dp">25dp</dimen>
+
+    <dimen name="margin_padding_14dp">14dp</dimen>
+
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_50dp">50dp</dimen>
+    <dimen name="padding_60dp">60dp</dimen>
+    <dimen name="padding_75dp">75dp</dimen>
+
+
+</resources>
+

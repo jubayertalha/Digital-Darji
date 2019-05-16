@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "759897668166",
+    "firebase_url": "https://digital-darji.firebaseio.com",
+    "project_id": "digital-darji",
+    "storage_bucket": "digital-darji.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759897668166:android:e181c5cd09936bb5",
+        "android_client_info": {
+          "package_name": "digital.com.digitaldorji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759897668166-jbmcteopu5kre5032ptd93a6agr5ts51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPJW2ntcCev2QNgFe15VzA3xEsaX4kDNg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

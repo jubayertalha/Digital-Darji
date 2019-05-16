@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#518FFC</color>
+    <color name="colorAccent">#518FFC</color>
+    <color name="cyanBlue">#518FFC</color>
+    <color name="dimGray">#696969</color>
+    <color name="dodgerBlue">#9013FE</color>
+    <color name="deepMegenta">#BD10E0</color>
+    <color name="facebookBlue">#4267b2</color>
+    <color name="gainsBoro">#DFDFDF</color>
+    <color name="gray">#959595</color>
+    <color name="gray44">#707070</color>
+    <color name="lightOrange">#FFB518</color>
+    <color name="tweeterColor">#38A1F3</color>
+    <color name="whisper">#e5e5e5</color>
+    <color name="ashGrey">#b2beb5</color>
+    <color name="whiteSmoke">#f5f5f5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="surfCrest">#bfc9c1</color>
+
+
+</resources>

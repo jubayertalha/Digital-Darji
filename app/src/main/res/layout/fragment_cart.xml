@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Cart">
+
+    <ListView
+        android:id="@+id/lv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_layout"
+        android:layout_gravity="center">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_cart"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuidisplay_medium"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuidisplay_medium"
+            android:text="$105.00"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cart"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sign_up"
+        android:text="@string/checkout"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

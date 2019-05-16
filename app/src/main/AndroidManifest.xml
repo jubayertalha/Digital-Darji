@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="digital.com.digitaldorji">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ddlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ddlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.AddCartActivity" />
+        <activity android:name=".Activity.BaseActivity" />
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Activity.PortfolioActivity" />
+
+        <!-- <activity android:name="PortfolioPageOfUserActivity"/> -->
+
+        <activity android:name=".Activity.ProfileSettingActivity" />
+        <activity android:name=".Activity.SalesActivity" />
+        <!-- <activity android:name="SalesPageOfUser"/> -->
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.UploadSalesActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.UploadPortfolioActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.TailorsBridalActivity" />
+        <activity android:name=".Activity.TailorPageOfUserActivity" />
+        <activity android:name=".Activity.AddCartPActivity" />
+        <activity android:name=".Activity.OrderActivity"></activity>
+
+        <service
+            android:name=".Service.NotificationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/nnnn" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+
+    </application>
+
+</manifest>

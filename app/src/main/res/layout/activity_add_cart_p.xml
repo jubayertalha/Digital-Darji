@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddCartPActivity">
+
+    <include
+        android:id="@+id/add_cartBar"
+        layout="@layout/app_bar" />
+
+    <ImageView
+        android:id="@+id/iv_add_cart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/add_cartBar"
+        android:padding="@dimen/dimen_10dp"
+        android:src="@drawable/image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_button"
+        android:layout_below="@id/iv_add_cart"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/et_neck"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/neck_around"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/shoulder_width"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_waist"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/waist_around"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_bicep"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/bicep_around"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/et_sleeve"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/sleeve_length"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_chest"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/chest_around"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_shirt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/shirt_length"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_wrist"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/waist_around"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_cart_tailor"
+                style="@style/NunitoSansBold"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sign_up"
+                android:text="VIEW TAILOR"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <Button
+                android:id="@+id/btn_cart_review"
+                style="@style/NunitoSansBold"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sign_up"
+                android:text="GIVE REVIEW"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            style="@style/NunitoSansBold"
+            android:layout_width="345dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sign_up"
+            android:text="@string/add_to_Cart"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp" />
+    </FrameLayout>
+
+</RelativeLayout>

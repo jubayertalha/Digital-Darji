@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- For Activity Main-->
+    <string name="app_name">Digital Dorji</string>
+    <string name="sign_up_as_user">SIGN UP AS USER</string>
+    <string name="sign_up_as_tailor">SIGN UP AS TAILOR</string>
+    <string name="full_name">Full Name</string>
+    <string name="sign_in_as_user">SIGN IN AS USER</string>
+    <string name="sign_in_as_tailor">SIGN IN AS TAILOR</string>
+
+    <!-- For add cart p-->
+    <string name="neck_around">Neck Around</string>
+    <string name="shoulder_width">Shoulder Width</string>
+    <string name="waist_around">Waist Around</string>
+    <string name="bicep_around">Bicep Around</string>
+    <string name="sleeve_length">Sleeve Length</string>
+    <string name="chest_around">Chest Around</string>
+    <string name="shirt_length">Shirt Length</string>
+
+    <!-- For  Advanced Search-->
+
+    <string name="advanced_search">Advanced Search</string>
+    <string name="location">Location</string>
+    <string name="show">Show</string>
+
+
+    <!-- For  cart-->
+    <string name="total">Total:</string>
+    <string name="checkout">CheckOut</string>
+    <string name="undercover_t_shirt">Undercover T shirt</string>
+
+
+    <!-- For   pay-->
+    <string name="select_payment_method">Select payment method:</string>
+    <string name="card">Card</string>
+    <string name="cash">Cash</string>
+    <string name="pay">Pay</string>
+    <string name="gift_card">Gift Card</string>
+
+    <!-- For Portfolio-->
+    <string name="categories">Categories</string>
+    <string name="actions">Actions</string>
+
+    <!-- For Profile Seller-->
+    <string name="setting">Setting</string>
+    <string name="sale">Sale</string>
+    <string name="portfolio">Portfolio</string>
+    <string-array name="category_arrays">
+        <item>Frok</item>
+        <item>Shirt</item>
+        <item>T-Shirt</item>
+        <item>Casual dress</item>
+    </string-array>
+
+    <string-array name="category_arrays_profile">
+        <item>All</item>
+        <item>Kid</item>
+        <item>Party</item>
+        <item>Bridal</item>
+        <item>Casual</item>
+    </string-array>
+
+    <string-array name="customize_your_Jersey">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+    <string name="country_2018">Country Authentic Home Jersey 2018</string>
+    <string name="size">Size</string>
+    <string name="Country_2018">Country Authentic Home Jersey 2018</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="l">L</string>
+    <string name="xl">XL</string>
+    <string name="colour">Colour</string>
+    <string name="qty">Qty</string>
+    <string name="xxl">XXL</string>
+    <string name="one">1</string>
+    <string name="add_to_Cart">add to cart</string>
+
+    <!-- For Profile Settings-->
+    <string name="name">Name</string>
+    <string name="upload_profile_picture">Upload Profile Picture</string>
+    <string name="save">Save</string>
+    <string name="address">Address</string>
+
+    <!-- For Sign in-->
+    <string name="e_mail">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dorji">Dorji</string>
+    <string name="sign_in_with_Facebook_Twitter">Sign in with Facebook or Twitter</string>
+
+    <!-- For Sign up-->
+    <string name="sign_up">Sign Up</string>
+
+
+    <!-- For User Profile -->
+    <string name="home">Home</string>
+    <string name="my_cart">My cart</string>
+    <string name="account">Account</string>
+    <string name="log_out">Logout</string>
+
+
+    <!-- For   Upload Portfolio-->
+    <string name="upload_portfolio">Upload Portfolio</string>
+    <string name="upload">Upload</string>
+    <string name="drag_photo">Drag a photo here</string>
+    <string name="or">Or</string>
+    <string name="select_photos">Select Photos</string>
+    <string name="item_name">Item Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="uploading">Uploading&#8230;</string>
+    <string name="popular_tailors">Popular Tailors</string>
+    <string name="new_tailors">New Tailors</string>
+
+    <!-- For   Upload Sales-->
+    <string name="upload_sales">Upload Sales</string>
+    <string name="price">Price</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- For   Navigation Drawer-->
+    <string name="logOut">Log Out</string>
+</resources>

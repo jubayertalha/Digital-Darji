@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/female"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/sign_in_user"
+            style="@style/NunitoSansBold"
+            android:layout_width="@dimen/dimen_300dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="@drawable/sign_up"
+            android:padding="@dimen/dimen_10dp"
+            android:shadowColor="@color/cyanBlue"
+            android:text="SIGN IN AS USER"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <Button
+            android:id="@+id/sign_in_tailor"
+            style="@style/NunitoSansBold"
+            android:layout_width="@dimen/dimen_300dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/signup_tailor"
+            android:padding="@dimen/dimen_10dp"
+            android:shadowColor="@color/cyanBlue"
+            android:text="SIGN IN AS TAILOR"
+            android:textColor="@color/cyanBlue"
+            android:textColorHighlight="@color/cyanBlue"
+            android:textSize="@dimen/dimen_18sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/sign_up_user"
+            style="@style/NunitoSansBold"
+            android:layout_width="240dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="@drawable/sign_up"
+            android:shadowColor="@color/cyanBlue"
+            android:text="@string/sign_up_as_user"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <Button
+            android:id="@+id/sign_up_tailor"
+            style="@style/NunitoSansBold"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/signup_tailor"
+            android:shadowColor="@color/cyanBlue"
+            android:text="@string/sign_up_as_tailor"
+            android:textColor="@color/cyanBlue"
+            android:textSize="@dimen/dimen_18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

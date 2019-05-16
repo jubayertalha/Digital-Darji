@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MontserratBold" parent="Theme.AppCompat">
+        <item name="font">@font/montserrat_bold</item>
+    </style>
+
+    <style name="NunitoSans" parent="Theme.AppCompat">
+        <item name="font">@font/nunitosans_bold</item>
+    </style>
+
+    <style name="NunitoSansBold" parent="@android:style/Widget.Button">
+        <item name="font">@font/nunitosans_bold</item>
+    </style>
+
+
+    <style name="PoppinsRegular" parent="Theme.AppCompat">
+        <item name="font">@font/poppins_regular</item>
+    </style>
+    <style name="PoppinsMedium" parent="@android:style/Widget.Button">
+        <item name="font">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="PoppinsSemiBold" parent="Theme.AppCompat">
+        <item name="font">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="UbuntuLight" parent="Theme.AppCompat">
+        <item name="font">@font/ubuntu_light</item>
+    </style>
+
+    <style name="tabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/gray44</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#b2beb5</item>
+    </style>
+
+</resources>

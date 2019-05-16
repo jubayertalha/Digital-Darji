@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/add_cartBar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/image" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_add_cart">
+
+
+            <RelativeLayout
+                android:id="@+id/tv_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_add_cart_name"
+                    style="@style/MontserratBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="@string/country_2018"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <LinearLayout
+                    android:id="@+id/size_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_size"
+                        style="@style/NunitoSans"
+                        android:layout_width="40dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_14dp"
+                        android:gravity="center"
+                        android:text="@string/size"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <Button
+                        android:id="@+id/btn_add_cart_s"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@color/cyanBlue"
+                        android:text="@string/s"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <Button
+                        android:id="@+id/btn_add_cart_m"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:text="@string/m"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <Button
+                        android:id="@+id/btn_add_cart_l"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="9dp"
+                        android:background="@color/white"
+                        android:text="@string/l"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <Button
+                        android:id="@+id/btn_add_cart_xl"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="9dp"
+                        android:background="@color/white"
+                        android:text="@string/xl"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <Button
+                        android:id="@+id/btn_add_cart_xxl"
+                        android:layout_width="47dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="9dp"
+                        android:background="@color/white"
+                        android:text="@string/xxl"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/color_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_below="@id/size_layout"
+                    android:layout_marginTop="@dimen/margin_14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/NunitoSans"
+                        android:layout_width="53dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_14dp"
+                        android:paddingStart="5dp"
+                        android:text="@string/colour"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/rb_r"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:buttonTint="#D0021B"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rb_y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:buttonTint="#F8E71C"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rb_o"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:buttonTint="#F5A623"
+
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rb_b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:buttonTint="@color/dodgerBlue" />
+
+                        <RadioButton
+                            android:id="@+id/rb_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:buttonTint="@color/deepMegenta" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quantity"
+                    android:layout_width="@dimen/dimen_209dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/color_layout"
+                    android:layout_marginTop="@dimen/margin_14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/NunitoSans"
+                        android:layout_width="40dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center"
+                        android:text="@string/qty"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <Button
+                        android:id="@+id/iv_minus"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_14dp"
+                        android:background="@drawable/minus" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        style="@style/NunitoSans"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_14dp"
+                        android:gravity="center"
+                        android:text="@string/one"
+                        android:textSize="@dimen/dimen_22sp" />
+
+                    <Button
+                        android:id="@+id/iv_plus"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_14dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_cart_tailor"
+                style="@style/NunitoSansBold"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/sign_up"
+                android:text="VIEW TAILOR"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <Button
+                android:id="@+id/btn_cart_review"
+                style="@style/NunitoSansBold"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/sign_up"
+                android:text="GIVE REVIEW"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            style="@style/NunitoSansBold"
+            android:layout_width="345dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sign_up"
+            android:text="@string/add_to_Cart"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp" />
+    </RelativeLayout>
+</LinearLayout>
+

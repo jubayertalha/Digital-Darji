@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/cyanBlue"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/PoppinsRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/upload_sales"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:background="@drawable/recktangle_shape_upload_portfolio">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="123dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/tv_select_photos"
+                style="@style/UbuntuLight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/select_photos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_selectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_layout"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="19dp">
+
+        <EditText
+            android:layout_alignParentTop="true"
+            android:id="@+id/et_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/item_name"
+            android:paddingTop="10dp"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingTop="10dp"
+            android:layout_below="@id/et_item"
+            />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/price"
+            android:paddingTop="10dp"
+            android:textSize="16sp"
+            android:layout_below="@id/spinner" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_cancel_uploadSales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#DFDFDF">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cancel"
+                android:textSize="@dimen/dimen_16sp"
+                style="@style/UbuntuLight" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_upload_uploadSales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/tweeterColor">
+
+
+            <TextView
+                android:id="@+id/tv_button_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/upload"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                style="@style/UbuntuLight" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

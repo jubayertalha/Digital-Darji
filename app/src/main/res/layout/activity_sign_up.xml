@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sign_up"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/camera_upload"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/image_upload"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <View
+                android:id="@+id/hr_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:layout_marginTop="@dimen/margin_padding_25dp"
+                android:background="@color/whisper" />
+
+            <EditText
+                android:id="@+id/et_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/margin_padding_25dp"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp" />
+
+            <View
+                android:id="@+id/hr_line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:background="@color/whisper" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/margin_padding_25dp"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp" />
+
+            <View
+                android:id="@+id/hr_line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:background="@color/whisper" />
+
+            <EditText
+                android:id="@+id/et_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Occupation"
+                android:inputType="text"
+                android:paddingLeft="@dimen/margin_padding_25dp"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp" />
+
+            <View
+                android:id="@+id/hr_line11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:background="@color/whisper" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Address"
+                android:inputType="textShortMessage"
+                android:paddingLeft="@dimen/margin_padding_25dp"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp" />
+
+            <View
+                android:id="@+id/hr_line12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:background="@color/whisper" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/margin_padding_25dp"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp" />
+
+            <View
+                android:id="@+id/hr_line3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:layout_below="@+id/et_password"
+                android:background="@color/whisper" />
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:background="@null"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/margin_padding_25dp"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp" />
+
+            <View
+                android:id="@+id/hr_line4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:layout_below="@+id/et_confirm_password"
+                android:background="@color/whisper" />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_padding_15dp"
+                android:paddingBottom="@dimen/margin_padding_15dp"
+                android:text="I agree to Terms and Conditions"
+                android:textColor="@color/dimGray"
+                android:textSize="@dimen/dimen_18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cyanBlue"
+        android:text="@string/sign_up"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+

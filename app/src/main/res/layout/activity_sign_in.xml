@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dorji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_50dp"
+                android:paddingBottom="@dimen/padding_75dp"
+                android:text="@string/dorji"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_50sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/e_mail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_dorji"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/e_mail"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_password"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="18dp"
+
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/cyanBlue"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_sign_in_facebook_twitter"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/sign_in"-->
+                <!--android:layout_marginLeft="@dimen/dimen_20dp"-->
+                <!--android:layout_marginTop="45dp"-->
+                <!--android:layout_marginRight="@dimen/dimen_20dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/sign_in_with_Facebook_Twitter"-->
+                <!--android:textSize="@dimen/dimen_16sp" />-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--app:cardBackgroundColor="@color/facebookBlue">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/facebook" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--app:cardBackgroundColor="@color/tweeterColor">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/twitter" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>
