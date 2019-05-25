@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "191940744988-5ae05c3e4c1jss68at80ktvlfogjpibd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appincubator.digitaldarji",
+            "certificate_hash": "454f58feb8547fb7a29e1b7b52fed655ddd0c9b3"
+          }
+        },
+        {
           "client_id": "191940744988-ceaqn3h8sl89suvo76jbc2u19qanq6sg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
